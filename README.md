@@ -56,13 +56,21 @@ The program prints the C kernel's sdot alongside the x86-64 kernel's sdot, and v
 
 **Debug mode:**
 
+<img width="1483" height="762" alt="Debug_CMD" src="https://github.com/user-attachments/assets/7bc16216-75ab-4164-8a3e-7c0a7fa83cb9" />
+
 **Release mode:**
+
+<img width="1483" height="762" alt="Release_CMD" src="https://github.com/user-attachments/assets/d60a54e9-a180-4201-8e5e-d4155ea089f2" />
 
 ## iii.) Program Output with Correctness Check — x86-64 version
 
 **Debug mode:**
 
+<img width="2559" height="1439" alt="Debug" src="https://github.com/user-attachments/assets/13cec891-172b-4442-b40d-2c7305dca95c" />
+
 **Release mode:**
+
+<img width="2555" height="1439" alt="Release" src="https://github.com/user-attachments/assets/a28543ff-66f5-454e-a455-12fa68611f58" />
 
 ## iv.) Short Video
 
