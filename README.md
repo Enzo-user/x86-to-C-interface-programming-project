@@ -56,22 +56,13 @@ The program prints the C kernel's sdot alongside the x86-64 kernel's sdot, and v
 
 **Debug mode:**
 
-<img width="1483" height="762" alt="Debug_CMD" src="https://github.com/user-attachments/assets/4b989000-c72e-4ae0-9692-8e1951103879" />
-
 **Release mode:**
-
-<img width="1483" height="762" alt="Release_CMD" src="https://github.com/user-attachments/assets/7ac1c737-01a6-4705-b7ce-1bbe6ed6ae5d" />
 
 ## iii.) Program Output with Correctness Check — x86-64 version
 
 **Debug mode:**
 
-<img width="2559" height="1439" alt="Debug" src="https://github.com/user-attachments/assets/dc2773ae-8d1b-44de-bc41-34d8dbfc2738" />
-
 **Release mode:**
-
-<img width="2555" height="1439" alt="Release" src="https://github.com/user-attachments/assets/fb27d754-e9fb-462a-ac00-7c3416aab204" />
-
 
 ## iv.) Short Video
 
@@ -84,9 +75,10 @@ The video (5–10 mins) shows the source code walkthrough, compilation, and exec
 ## Project Structure
 
 ```
-├── Test.sln                  # Visual Studio solution
+├── Test.slnx                 # Visual Studio solution
 ├── Test/
-│   ├── Test.vcxproj          # project file (x64, Debug & Release)
+│   ├── Test.vcxproj          # project file (x64, Debug & Release, NASM custom build step)
+│   ├── Test.vcxproj.filters
 │   ├── Source.c              # C main + C kernel (sdot_c) + timing + correctness check
 │   └── Source.asm            # x86-64 NASM kernel (sdot_asm)
 └── README.md
@@ -94,8 +86,11 @@ The video (5–10 mins) shows the source code walkthrough, compilation, and exec
 
 ## How to Build and Run
 
-1. Open `Test.sln` in Visual Studio.
+1. Open `Test.slnx` in Visual Studio.
 2. Select **x64** and either **Debug** or **Release**.
-3. `Source.asm` builds via a Custom Build Tool step using NASM (`nasm -f win64`), configured for both configurations.
+3. `Source.asm` is assembled via a Custom Build Tool step using NASM (`nasm -f win64`), configured for both Debug and Release.
+
+   > **Note:** The custom build step references NASM by absolute path (`C:\Users\Admin\Documents\NASM\nasm.exe`). If NASM is installed elsewhere on your machine, update the path under *Source.asm → Properties → Custom Build Tool → Command Line* (for both Debug and Release configurations) before building.
+
 4. Build the solution, then run with the Local Windows Debugger (or run `Test.exe` directly).
 5. The program runs all three vector sizes automatically. Note: the 2^30 phase allocates ~8 GB of RAM and takes a few minutes in Debug mode; if allocation fails on your machine, the program automatically falls back to 2^29 / 2^28 as permitted by the specs.
