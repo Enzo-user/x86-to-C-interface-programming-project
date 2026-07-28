@@ -87,13 +87,20 @@ The video (5–10 mins) shows the source code walkthrough, compilation, and exec
 ## Project Structure
 
 ```
-├── Test.slnx                 # Visual Studio solution
 ├── Test/
-│   ├── Test.vcxproj          # project file (x64, Debug & Release, NASM custom build step)
-│   ├── Test.vcxproj.filters
-│   ├── Source.c              # C main + C kernel (sdot_c) + timing + correctness check
-│   └── Source.asm            # x86-64 NASM kernel (sdot_asm)
-└── README.md
+│   ├── Source.asm
+│   ├── Source.c
+│   ├── Test.vcxproj
+│   └── Test.vcxproj.filters
+├── screenshots/
+│   ├── Debug.png
+│   ├── Debug_CMD.png
+│   ├── Release.png
+│   └── Release_CMD.png
+├── specs/
+│   └── x86-to-C interface programming project - Specs 1.png
+├── README.md
+└── Test.slnx
 ```
 
 ## How to Build and Run
