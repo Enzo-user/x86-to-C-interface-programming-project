@@ -19,7 +19,7 @@ Since we were given Spec 1, vectors A and B and the result `sdot` are all **sing
 
 - **Machine used:** 32 GB DDR4 RAM (2^30 ran at full size, no fallback needed)
 - **Build:** Visual Studio, x64, tested in both **Debug** and **Release** configurations
-- **Video (source code, compilation, execution):** [WATCH HERE](PASTE_VIDEO_LINK_HERE)
+- **Video (source code, compilation, execution):** [WATCH HERE](https://youtu.be/PrSfT1reQL4)
 
 ---
 
@@ -80,7 +80,7 @@ The program prints the C kernel's sdot alongside the x86-64 kernel's sdot, then 
 
 Here is our video (5-10 mins) showing the source code, compilation, and execution of both the C and x86-64 versions:
 
-**[PASTE_VIDEO_LINK_HERE](PASTE_VIDEO_LINK_HERE)**
+**[VIDEO](https://youtu.be/PrSfT1reQL4)**
 
 ---
 
