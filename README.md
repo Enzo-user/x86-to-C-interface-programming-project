@@ -1,5 +1,9 @@
 # x86-to-C Interface Programming Project — Dot Product Kernel (Spec 1, Single-Precision)
 
+**Prepared by:**
+- Suerte, Lorenzo Enrique Evangelista
+- Obcena, Hans Gabriel
+
 This project implements a dot product kernel
 
 ```
