@@ -19,7 +19,7 @@ Since we were given Spec 1, vectors A and B and the result `sdot` are all **sing
 
 - **Machine used:** 32 GB DDR4 RAM (2^30 ran at full size, no fallback needed)
 - **Build:** Visual Studio, x64, tested in both **Debug** and **Release** configurations
-- **Video (source code, compilation, execution):** [WATCH HERE](https://youtu.be/toWKlolm8KM)
+- **Video (source code, compilation, execution):** [WATCH HERE](https://youtu.be/UAW1UcU2r70)
 
 ---
 
