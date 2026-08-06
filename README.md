@@ -80,7 +80,7 @@ The program prints the C kernel's sdot alongside the x86-64 kernel's sdot, then 
 
 Here is our video (5-10 mins) showing the source code, compilation, and execution of both the C and x86-64 versions:
 
-**[VIDEO](https://youtu.be/toWKlolm8KM)**
+**[VIDEO](https://youtu.be/UAW1UcU2r70)**
 
 ---
 
